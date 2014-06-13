@@ -14,6 +14,7 @@ import org.eclipse.swt.widgets.Table;
 import org.eclipse.swt.widgets.TableColumn;
 import org.eclipse.swt.widgets.TableItem;
 import org.eclipse.swt.widgets.Text;
+//import org.eclipse.ui.PlatformUI;
 import org.jcryptool.core.logging.utils.LogUtil;
 import org.jcryptool.visual.sigVerification.SigVerificationPlugin;
 import org.jcryptool.visual.sigVerification.algorithm.Hash;
@@ -299,6 +300,7 @@ public class SignaturResult extends Shell {
             public void widgetSelected(SelectionEvent e) {
                 // ToDo
                 try {
+//                    PlatformUI.getWorkbench().getActiveWorkbenchWindow().getActivePage().showView("org.jcryptool.visual.crtverification.views.CrtVerView");
                     sigVerView.createTabItem();
                     sigVerView.changeTab();
                 } catch (Exception ex) {
